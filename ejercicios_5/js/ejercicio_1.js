@@ -11,4 +11,4 @@ const  prepareJelly = (cb1,cb2,cb3,cb4) => {
     cb4()
 }
 
-resultJelly = prepareJelly (water,aboutJelly,mix,eat)
+let resultJelly = prepareJelly (water,aboutJelly,mix,eat)
