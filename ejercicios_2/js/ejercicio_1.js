@@ -4,10 +4,28 @@ con la letra inicial y la letra final de ese nombre
     input => Israel
     output => Il
 */
-const getName = (str) => {
-    let longString = str.length
-    let newString = str.charAt(0) + str.charAt(longString-1)
-    return newString
-}
- let result1 = getName("Juan")
- console.log(result1)
+const getName = (str) => `${str.charAt(0)}${str.charAt(str.length-1)}`
+
+console.log(getName("Martinez"))
+
+ //Sin utilizar .chartAt
+
+const getInitial = (str) => `${str[0]}${str[str.length-1]}`
+
+console.log(getInitial("Mario"))
+
+//Sin metodos 
+
+const getNameInitial = (str) => {
+  let convertArray = [str]
+  let count = 0
+  let array = []
+  for(let i=0; i<i+1 && !array == " ";i++){
+    array = convertArray[0][i]
+    count ++
+  }
+  let result1 = `${str[0]}${str[count-2]}`
+  return result1
+} 
+
+console.log(getNameInitial("Mario"))
