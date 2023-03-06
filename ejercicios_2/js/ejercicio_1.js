@@ -17,11 +17,10 @@ console.log(getInitial("Mario"))
 //Sin metodos 
 
 const getNameInitial = (str) => {
-  let convertArray = [str]
   let count = 0
   let array = []
   for(let i=0; i<i+1 && !array == " ";i++){
-    array = convertArray[0][i]
+    array = str[i]
     count ++
   }
   let result1 = `${str[0]}${str[count-2]}`
