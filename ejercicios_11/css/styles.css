@@ -1,0 +1,8 @@
+ul{
+    padding: 30px;
+    border: dotted;
+    background-color: aquamarine;
+}
+ul li{
+    margin-left: 20px;
+}
